@@ -1,0 +1,767 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-javascript",
+  "lastModifiedDate" : "2024-05-08T12:54:00Z",
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Gebruiker",
+      "properties" : {
+        "structurizr.dsl.identifier" : "gebruiker"
+      },
+      "relationships" : [ {
+        "destinationId" : "7",
+        "id" : "8",
+        "properties" : {
+          "structurizr.dsl.identifier" : "654a97c0-c01b-4880-9d61-c96598022570"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Vult in",
+        "destinationId" : "12",
+        "id" : "13",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e0531003-35b1-465f-88ec-b17e5d396e08"
+        },
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person,OutOfScope"
+    }, {
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Esri medewerker",
+      "properties" : {
+        "structurizr.dsl.identifier" : "medewerker"
+      },
+      "relationships" : [ {
+        "description" : "Maakt infographic templates",
+        "destinationId" : "5",
+        "id" : "6",
+        "properties" : {
+          "structurizr.dsl.identifier" : "4fd4e57a-0019-427e-a709-3676cfae2c02"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Selecteerd infographic template",
+        "destinationId" : "7",
+        "id" : "9",
+        "properties" : {
+          "structurizr.dsl.identifier" : "974249f1-d0eb-486b-8c12-87a6315031bb"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Selecteerd actieve template",
+        "destinationId" : "25",
+        "id" : "26",
+        "properties" : {
+          "structurizr.dsl.identifier" : "f99f2fd4-6b39-4426-b45e-eef1b39de610"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Selecteren actieve infographic",
+        "destinationId" : "30",
+        "id" : "33",
+        "properties" : {
+          "structurizr.dsl.identifier" : "24c3e0c9-e390-4af3-b469-fbdf794ce0f0"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Selecteren actieve infographic",
+        "destinationId" : "47",
+        "id" : "48",
+        "properties" : {
+          "structurizr.dsl.identifier" : "60490003-514e-4d8c-a609-7544148e312c"
+        },
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person,OutOfScope"
+    } ],
+    "softwareSystems" : [ {
+      "documentation" : { },
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "Graph API",
+      "properties" : {
+        "structurizr.dsl.identifier" : "graphapi"
+      },
+      "relationships" : [ {
+        "description" : "Stuurt email",
+        "destinationId" : "1",
+        "id" : "4",
+        "properties" : {
+          "structurizr.dsl.identifier" : "e1ff1f19-4d5e-4829-a4dc-5bc9b1425eb2"
+        },
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System,OutOfScope"
+    }, {
+      "description" : "GIS data systeem ook gebruikt voor het opslaan van infographic templates",
+      "documentation" : { },
+      "id" : "5",
+      "location" : "Unspecified",
+      "name" : "ArcGIS API",
+      "properties" : {
+        "structurizr.dsl.identifier" : "arcgis"
+      },
+      "relationships" : [ {
+        "destinationId" : "7",
+        "id" : "10",
+        "properties" : {
+          "structurizr.dsl.identifier" : "3af4b433-952c-49a5-890e-6cf5b58e6d80"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "description" : "maken infographic",
+        "destinationId" : "14",
+        "id" : "17",
+        "properties" : {
+          "structurizr.dsl.identifier" : "9210f781-aa3b-4811-a8af-f64e5103d3f6"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Maken infographic",
+        "destinationId" : "22",
+        "id" : "24",
+        "properties" : {
+          "structurizr.dsl.identifier" : "bccca379-cbbf-41ff-b5e0-0163103718ba"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "description" : "ophalen templates",
+        "destinationId" : "34",
+        "id" : "35",
+        "properties" : {
+          "structurizr.dsl.identifier" : "a552f75e-ddc1-4145-8d2d-55349f6276b0"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      }, {
+        "description" : "ophalen templates",
+        "destinationId" : "25",
+        "id" : "36",
+        "linkedRelationshipId" : "35",
+        "sourceId" : "5"
+      }, {
+        "description" : "Ophalen templates",
+        "destinationId" : "43",
+        "id" : "45",
+        "properties" : {
+          "structurizr.dsl.identifier" : "1b7d89dc-e88d-4d75-a908-d63405b0fc55"
+        },
+        "sourceId" : "5",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System,OutOfScope"
+    }, {
+      "containers" : [ {
+        "description" : "Creeren en publiceren van formulieren",
+        "documentation" : { },
+        "id" : "12",
+        "name" : "Survey123",
+        "properties" : {
+          "structurizr.dsl.identifier" : "survey123"
+        },
+        "relationships" : [ {
+          "description" : "Stuurt data door naar",
+          "destinationId" : "14",
+          "id" : "15",
+          "properties" : {
+            "structurizr.dsl.identifier" : "b57a3afc-eef0-47d8-a761-fca6553622a3"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Stuurt aan",
+          "destinationId" : "18",
+          "id" : "19",
+          "properties" : {
+            "structurizr.dsl.identifier" : "d9f3cde8-d10f-4629-9f92-290e2d421f51"
+          },
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,OutOfScope"
+      }, {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "18",
+          "name" : "Http trigger",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurehttptrigger"
+          },
+          "relationships" : [ {
+            "description" : "Stuurt infographic request",
+            "destinationId" : "20",
+            "id" : "21",
+            "properties" : {
+              "structurizr.dsl.identifier" : "b22b678b-5ea0-401b-9de1-d3665862aa6f"
+            },
+            "sourceId" : "18",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "20",
+          "name" : "Queue",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurequeue"
+          },
+          "relationships" : [ {
+            "description" : "Stuurt aan",
+            "destinationId" : "22",
+            "id" : "23",
+            "properties" : {
+              "structurizr.dsl.identifier" : "4f43b2ff-7257-449f-b01d-eb6fc0f441fc"
+            },
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "22",
+          "name" : "Queue trigger",
+          "properties" : {
+            "structurizr.dsl.identifier" : "azurequeuetrigger"
+          },
+          "tags" : "Element,Component"
+        } ],
+        "description" : "Applicatie die gebruiker data omzet en doorstuurt",
+        "documentation" : { },
+        "id" : "14",
+        "name" : "Azure applicatie",
+        "properties" : {
+          "structurizr.dsl.identifier" : "azureapplicatie"
+        },
+        "relationships" : [ {
+          "description" : "Stuurt email data naar",
+          "destinationId" : "3",
+          "id" : "16",
+          "properties" : {
+            "structurizr.dsl.identifier" : "3cf9bc7e-9d99-4b0e-b780-5d2a8a4b88a8"
+          },
+          "sourceId" : "14",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container"
+      } ],
+      "documentation" : { },
+      "id" : "7",
+      "location" : "Unspecified",
+      "name" : "ArcGIS Demo",
+      "properties" : {
+        "structurizr.dsl.identifier" : "arcgis_demo"
+      },
+      "relationships" : [ {
+        "description" : "Maakt email",
+        "destinationId" : "3",
+        "id" : "11",
+        "properties" : {
+          "structurizr.dsl.identifier" : "b4052cd6-da99-4995-88fd-8f9f99c9ddf8"
+        },
+        "sourceId" : "7",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "containers" : [ {
+        "description" : "slaat de infographic templates op",
+        "documentation" : { },
+        "id" : "30",
+        "name" : "Infographic templates database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "relationships" : [ {
+          "description" : "ophalen actieve infographic",
+          "destinationId" : "14",
+          "id" : "31",
+          "properties" : {
+            "structurizr.dsl.identifier" : "57e382b5-635e-4703-be0e-642ec4936b63"
+          },
+          "sourceId" : "30",
+          "tags" : "Relationship"
+        }, {
+          "description" : "ophalen actieve infographic",
+          "destinationId" : "7",
+          "id" : "32",
+          "linkedRelationshipId" : "31",
+          "sourceId" : "30"
+        } ],
+        "tags" : "Element,Container,database,OutOfScope"
+      }, {
+        "components" : [ {
+          "documentation" : { },
+          "id" : "38",
+          "name" : "Http trigger",
+          "properties" : {
+            "structurizr.dsl.identifier" : "templatehttptrigger"
+          },
+          "relationships" : [ {
+            "description" : "Stuurt record",
+            "destinationId" : "40",
+            "id" : "41",
+            "properties" : {
+              "structurizr.dsl.identifier" : "e90f9e8c-122c-4e36-bf59-831334ba8cf8"
+            },
+            "sourceId" : "38",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "39",
+          "name" : "Timer trigger",
+          "properties" : {
+            "structurizr.dsl.identifier" : "templatetimertrigger"
+          },
+          "relationships" : [ {
+            "description" : "Stuurt record",
+            "destinationId" : "40",
+            "id" : "42",
+            "properties" : {
+              "structurizr.dsl.identifier" : "de16d51c-4e0c-46d2-92ab-26e2f71d7fae"
+            },
+            "sourceId" : "39",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        }, {
+          "documentation" : { },
+          "id" : "40",
+          "name" : "Queue",
+          "properties" : {
+            "structurizr.dsl.identifier" : "templatequeue"
+          },
+          "relationships" : [ {
+            "description" : "stuurt aan",
+            "destinationId" : "43",
+            "id" : "46",
+            "properties" : {
+              "structurizr.dsl.identifier" : "35f2c93c-7f5c-41ad-aa36-2ee639919aec"
+            },
+            "sourceId" : "40",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component,database"
+        }, {
+          "documentation" : { },
+          "id" : "43",
+          "name" : "Queue trigger",
+          "properties" : {
+            "structurizr.dsl.identifier" : "templatequeuetrigger"
+          },
+          "relationships" : [ {
+            "description" : "Opslaan templates",
+            "destinationId" : "30",
+            "id" : "44",
+            "properties" : {
+              "structurizr.dsl.identifier" : "12e15ec6-6851-4bcf-aad4-2ee6363e7bc1"
+            },
+            "sourceId" : "43",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component"
+        } ],
+        "description" : "Systeem voor het synchroniseren van de template selector en ArcGIS database",
+        "documentation" : { },
+        "id" : "34",
+        "name" : "Template database syncher",
+        "properties" : {
+          "structurizr.dsl.identifier" : "databasesyncher"
+        },
+        "relationships" : [ {
+          "description" : "slaat templates op",
+          "destinationId" : "30",
+          "id" : "37",
+          "properties" : {
+            "structurizr.dsl.identifier" : "6ad18f9b-7a8c-4288-b834-06cf463791c3"
+          },
+          "sourceId" : "34",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container"
+      }, {
+        "documentation" : { },
+        "id" : "47",
+        "name" : "Infographic selector",
+        "properties" : {
+          "structurizr.dsl.identifier" : "experiencebuilder"
+        },
+        "relationships" : [ {
+          "description" : "opslaan actieve infographic",
+          "destinationId" : "30",
+          "id" : "49",
+          "properties" : {
+            "structurizr.dsl.identifier" : "0a01b9f6-3c2e-44bc-9698-79c2f5a33a3a"
+          },
+          "sourceId" : "47",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,OutOfScope"
+      } ],
+      "description" : "Systeem voor het gebruik van infographic templates",
+      "documentation" : { },
+      "id" : "25",
+      "location" : "Unspecified",
+      "name" : "TemplateSysteem",
+      "properties" : {
+        "structurizr.dsl.identifier" : "templatesystem"
+      },
+      "relationships" : [ {
+        "description" : "ophalen actieve infographic",
+        "destinationId" : "22",
+        "id" : "27",
+        "properties" : {
+          "structurizr.dsl.identifier" : "7417f854-21ec-4efe-9ec6-932e8422b777"
+        },
+        "sourceId" : "25",
+        "tags" : "Relationship"
+      }, {
+        "description" : "ophalen actieve infographic",
+        "destinationId" : "14",
+        "id" : "28",
+        "linkedRelationshipId" : "27",
+        "sourceId" : "25"
+      }, {
+        "description" : "ophalen actieve infographic",
+        "destinationId" : "7",
+        "id" : "29",
+        "linkedRelationshipId" : "27",
+        "sourceId" : "25"
+      } ],
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKCiAgICBtb2RlbCB7CiAgICAgICAgR2VicnVpa2VyID0gcGVyc29uICJHZWJydWlrZXIiIHsKICAgICAgICAgICAgdGFncyAiT3V0T2ZTY29wZSIKICAgICAgICB9CgogICAgICAgIE1lZGV3ZXJrZXIgPSBwZXJzb24gIkVzcmkgbWVkZXdlcmtlciIgewogICAgICAgICAgICB0YWdzICJPdXRPZlNjb3BlIgogICAgICAgIH0KCiAgICAgICAgR3JhcGhBcGkgPSBzb2Z0d2FyZVN5c3RlbSAiR3JhcGggQVBJIiB7CiAgICAgICAgICAgIHRoaXMgLT4gZ2VicnVpa2VyICJTdHV1cnQgZW1haWwiCiAgICAgICAgICAgIHRhZ3MgIk91dE9mU2NvcGUiCiAgICAgICAgfQoKICAgICAgICBBcmNHSVMgPSBzb2Z0d2FyZVN5c3RlbSAiQXJjR0lTIEFQSSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiR0lTIGRhdGEgc3lzdGVlbSBvb2sgZ2VicnVpa3Qgdm9vciBoZXQgb3BzbGFhbiB2YW4gaW5mb2dyYXBoaWMgdGVtcGxhdGVzIgogICAgICAgICAgICBNZWRld2Vya2VyIC0+IHRoaXMgIk1hYWt0IGluZm9ncmFwaGljIHRlbXBsYXRlcyIKICAgICAgICAgICAgdGFncyAiT3V0T2ZTY29wZSIKICAgICAgICB9CgogICAgICAgIEFyY0dJU19EZW1vID0gc29mdHdhcmVTeXN0ZW0gIkFyY0dJUyBEZW1vIiB7CiAgICAgICAgICAgIEdlYnJ1aWtlciAtPiB0aGlzCiAgICAgICAgICAgIE1lZGV3ZXJrZXIgLT4gdGhpcyAiU2VsZWN0ZWVyZCBpbmZvZ3JhcGhpYyB0ZW1wbGF0ZSIKICAgICAgICAgICAgQXJjR0lTIC0+IHRoaXMKICAgICAgICAgICAgdGhpcyAtPiBHcmFwaEFwaSAiTWFha3QgZW1haWwiCgogICAgICAgICAgICBTdXJ2ZXkxMjMgPSBjb250YWluZXIgIlN1cnZleTEyMyIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkNyZWVyZW4gZW4gcHVibGljZXJlbiB2YW4gZm9ybXVsaWVyZW4iCiAgICAgICAgICAgICAgICBnZWJydWlrZXIgLT4gdGhpcyAiVnVsdCBpbiIKICAgICAgICAgICAgICAgIHRhZ3MgIk91dE9mU2NvcGUiCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIEF6dXJlQXBwbGljYXRpZSA9IGNvbnRhaW5lciAiQXp1cmUgYXBwbGljYXRpZSIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkFwcGxpY2F0aWUgZGllIGdlYnJ1aWtlciBkYXRhIG9temV0IGVuIGRvb3JzdHV1cnQiCiAgICAgICAgICAgICAgICBTdXJ2ZXkxMjMgLT4gdGhpcyAiU3R1dXJ0IGRhdGEgZG9vciBuYWFyIgogICAgICAgICAgICAgICAgdGhpcyAtPiBHcmFwaEFwaSAiU3R1dXJ0IGVtYWlsIGRhdGEgbmFhciIKICAgICAgICAgICAgICAgIEFyY0dJUyAtPiB0aGlzICJtYWtlbiBpbmZvZ3JhcGhpYyIKICAgICAgICAgICAgICAgIEF6dXJlSHR0cFRyaWdnZXIgPSBjb21wb25lbnQgIkh0dHAgdHJpZ2dlciJ7CiAgICAgICAgICAgICAgICAgICAgU3VydmV5MTIzIC0+IHRoaXMgIlN0dXVydCBhYW4iCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgQXp1cmVRdWV1ZSA9IGNvbXBvbmVudCAiUXVldWUiIHsKICAgICAgICAgICAgICAgICAgICBBenVyZUh0dHBUcmlnZ2VyIC0+IHRoaXMgIlN0dXVydCBpbmZvZ3JhcGhpYyByZXF1ZXN0IgogICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgIEF6dXJlUXVldWVUcmlnZ2VyID0gY29tcG9uZW50ICJRdWV1ZSB0cmlnZ2VyIiB7CiAgICAgICAgICAgICAgICAgICAgQXp1cmVRdWV1ZSAtPiB0aGlzICJTdHV1cnQgYWFuIgogICAgICAgICAgICAgICAgICAgIEFyY0dJUyAtPiB0aGlzICJNYWtlbiBpbmZvZ3JhcGhpYyIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgIH0KCiAgICAgICAgfQoKICAgICAgICBUZW1wbGF0ZVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJUZW1wbGF0ZVN5c3RlZW0iIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIlN5c3RlZW0gdm9vciBoZXQgZ2VicnVpayB2YW4gaW5mb2dyYXBoaWMgdGVtcGxhdGVzIgogICAgICAgICAgICBtZWRld2Vya2VyIC0+IHRoaXMgIlNlbGVjdGVlcmQgYWN0aWV2ZSB0ZW1wbGF0ZSIKICAgICAgICAgICAgdGhpcyAtPiBBenVyZVF1ZXVlVHJpZ2dlciAib3BoYWxlbiBhY3RpZXZlIGluZm9ncmFwaGljIgoKICAgICAgICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIkluZm9ncmFwaGljIHRlbXBsYXRlcyBkYXRhYmFzZSIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gInNsYWF0IGRlIGluZm9ncmFwaGljIHRlbXBsYXRlcyBvcCIKICAgICAgICAgICAgICAgIHRhZ3MgImRhdGFiYXNlIiAiT3V0T2ZTY29wZSIKICAgICAgICAgICAgICAgIHRoaXMgLT4gQXp1cmVBcHBsaWNhdGllICJvcGhhbGVuIGFjdGlldmUgaW5mb2dyYXBoaWMiCiAgICAgICAgICAgICAgICBtZWRld2Vya2VyIC0+IHRoaXMgIlNlbGVjdGVyZW4gYWN0aWV2ZSBpbmZvZ3JhcGhpYyIKICAgICAgICAgICAgfQoKICAgICAgICAgICAgRGF0YWJhc2VTeW5jaGVyID0gY29udGFpbmVyICJUZW1wbGF0ZSBkYXRhYmFzZSBzeW5jaGVyIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3lzdGVlbSB2b29yIGhldCBzeW5jaHJvbmlzZXJlbiB2YW4gZGUgdGVtcGxhdGUgc2VsZWN0b3IgZW4gQXJjR0lTIGRhdGFiYXNlIgogICAgICAgICAgICAgICAgQXJjR0lTIC0+IHRoaXMgIm9waGFsZW4gdGVtcGxhdGVzIgogICAgICAgICAgICAgICAgdGhpcyAtPiBkYXRhYmFzZSAic2xhYXQgdGVtcGxhdGVzIG9wIgogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB0ZW1wbGF0ZUh0dHBUcmlnZ2VyID0gY29tcG9uZW50ICJIdHRwIHRyaWdnZXIiIHsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgdGVtcGxhdGVUaW1lclRyaWdnZXIgPSBjb21wb25lbnQgIlRpbWVyIHRyaWdnZXIiIHsKCiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgVGVtcGxhdGVRdWV1ZSA9IGNvbXBvbmVudCAiUXVldWUiIHsKICAgICAgICAgICAgICAgICAgICB0ZW1wbGF0ZUh0dHBUcmlnZ2VyIC0+IHRoaXMgIlN0dXVydCByZWNvcmQiCiAgICAgICAgICAgICAgICAgICAgdGVtcGxhdGVUaW1lclRyaWdnZXIgLT4gdGhpcyAiU3R1dXJ0IHJlY29yZCIKICAgICAgICAgICAgICAgICAgICB0YWdzICJkYXRhYmFzZSIKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICB0ZW1wbGF0ZVF1ZXVlVHJpZ2dlciA9IGNvbXBvbmVudCAiUXVldWUgdHJpZ2dlciIgewogICAgICAgICAgICAgICAgICAgIHRoaXMgLT4gZGF0YWJhc2UgIk9wc2xhYW4gdGVtcGxhdGVzIgogICAgICAgICAgICAgICAgICAgIEFyY0dJUyAtPiB0aGlzICJPcGhhbGVuIHRlbXBsYXRlcyIKICAgICAgICAgICAgICAgICAgICBUZW1wbGF0ZVF1ZXVlIC0+IHRoaXMgInN0dXVydCBhYW4iCiAgICAgICAgICAgICAgICB9CgoKCiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIEV4cGVyaWVuY2VCdWlsZGVyID0gY29udGFpbmVyICJJbmZvZ3JhcGhpYyBzZWxlY3RvciIgewogICAgICAgICAgICAgICAgbWVkZXdlcmtlciAtPiB0aGlzICJTZWxlY3RlcmVuIGFjdGlldmUgaW5mb2dyYXBoaWMiCiAgICAgICAgICAgICAgICB0aGlzIC0+IGRhdGFiYXNlICJvcHNsYWFuIGFjdGlldmUgaW5mb2dyYXBoaWMiCiAgICAgICAgICAgICAgICB0YWdzICJPdXRPZlNjb3BlIgogICAgICAgICAgICB9CiAgICAgICAgfQoKCgogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICBzdHlsZXMgewogICAgICAgICAgICBlbGVtZW50ICJPdXRPZlNjb3BlIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM5NDk0OTQKICAgICAgICAgICAgfSAKICAgICAgICAgICAgZWxlbWVudCAiZGF0YWJhc2UiewogICAgICAgICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgc3lzdGVtQ29udGV4dCBBcmNHSVNfRGVtbyB7CiAgICAgICAgICAgIGluY2x1ZGUgZWxlbWVudC50eXBlPT1zb2Z0d2FyZVN5c3RlbQogICAgICAgICAgICBpbmNsdWRlIGVsZW1lbnQudHlwZT09cGVyc29uCiAgICAgICAgICAgIGRlZmF1bHQKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBUZW1wbGF0ZVN5c3RlbSB7CiAgICAgICAgICAgIGluY2x1ZGUgQXJjR0lTCiAgICAgICAgICAgIGluY2x1ZGUgTWVkZXdlcmtlcgogICAgICAgICAgICBpbmNsdWRlIFRlbXBsYXRlU3lzdGVtCiAgICAgICAgICAgIGluY2x1ZGUgZGF0YWJhc2UKICAgICAgICAgICAgaW5jbHVkZSBEYXRhYmFzZVN5bmNoZXIKICAgICAgICAgICAgaW5jbHVkZSBFeHBlcmllbmNlQnVpbGRlcgogICAgICAgIH0KCiAgICAgICAgY29tcG9uZW50IEF6dXJlQXBwbGljYXRpZSB7CiAgICAgICAgICAgIGluY2x1ZGUgU3VydmV5MTIzCiAgICAgICAgICAgIGluY2x1ZGUgQXJjR0lTCiAgICAgICAgICAgIGluY2x1ZGUgVGVtcGxhdGVTeXN0ZW0KICAgICAgICAgICAgaW5jbHVkZSBBenVyZUh0dHBUcmlnZ2VyCiAgICAgICAgICAgIGluY2x1ZGUgQXp1cmVRdWV1ZVRyaWdnZXIKICAgICAgICAgICAgaW5jbHVkZSBBenVyZVF1ZXVlCiAgICAgICAgfQoKICAgICAgICBjb21wb25lbnQgRGF0YWJhc2VTeW5jaGVyIHsKICAgICAgICAgICAgaW5jbHVkZSBkYXRhYmFzZQogICAgICAgICAgICBpbmNsdWRlIEFyY0dJUwogICAgICAgICAgICBpbmNsdWRlIHRlbXBsYXRlSHR0cFRyaWdnZXIKICAgICAgICAgICAgaW5jbHVkZSB0ZW1wbGF0ZVF1ZXVlVHJpZ2dlcgogICAgICAgICAgICBpbmNsdWRlIHRlbXBsYXRlVGltZXJUcmlnZ2VyCiAgICAgICAgICAgIGluY2x1ZGUgVGVtcGxhdGVRdWV1ZQogICAgICAgIH0KCiAgICAgICAgY29udGFpbmVyIEFyY0dJU19EZW1vIHsKICAgICAgICAgICAgaW5jbHVkZSBlbGVtZW50LnR5cGU9PXNvZnR3YXJlU3lzdGVtCiAgICAgICAgICAgIGluY2x1ZGUgZWxlbWVudC50eXBlPT1wZXJzb24KICAgICAgICAgICAgaW5jbHVkZSBlbGVtZW50LnR5cGU9PWNvbnRhaW5lcgogICAgICAgIH0KCiAgICAgICAgCiAgICAgICAgdGhlbWUgZGVmYXVsdAogICAgfQoKfQo="
+  },
+  "views" : {
+    "componentViews" : [ {
+      "containerId" : "14",
+      "dimensions" : {
+        "height" : 1641,
+        "width" : 1620
+      },
+      "elements" : [ {
+        "id" : "5",
+        "x" : 209,
+        "y" : 579
+      }, {
+        "id" : "12",
+        "x" : 219,
+        "y" : 214
+      }, {
+        "id" : "18",
+        "x" : 949,
+        "y" : 219
+      }, {
+        "id" : "20",
+        "x" : 949,
+        "y" : 644
+      }, {
+        "id" : "22",
+        "x" : 949,
+        "y" : 1049
+      }, {
+        "id" : "25",
+        "x" : 199,
+        "y" : 1024
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-001",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "19"
+      }, {
+        "id" : "21"
+      }, {
+        "id" : "23"
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "27"
+      }, {
+        "id" : "36"
+      } ]
+    }, {
+      "containerId" : "34",
+      "dimensions" : {
+        "height" : 1790,
+        "width" : 1660
+      },
+      "elements" : [ {
+        "id" : "5",
+        "x" : 440,
+        "y" : 1275
+      }, {
+        "id" : "30",
+        "x" : 1010,
+        "y" : 1270
+      }, {
+        "id" : "38",
+        "x" : 410,
+        "y" : 40
+      }, {
+        "id" : "39",
+        "x" : 975,
+        "y" : 45
+      }, {
+        "id" : "40",
+        "x" : 700,
+        "y" : 420
+      }, {
+        "id" : "43",
+        "x" : 695,
+        "y" : 790
+      } ],
+      "externalContainerBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Component-002",
+      "order" : 4,
+      "relationships" : [ {
+        "id" : "41"
+      }, {
+        "id" : "42"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "46"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "defaultView" : "SystemContext-001",
+      "lastSavedView" : "SystemContext-001",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "background" : "#949494",
+          "tag" : "OutOfScope"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "database"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ]
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 1691,
+        "width" : 1570
+      },
+      "elements" : [ {
+        "id" : "2",
+        "x" : 960,
+        "y" : 569
+      }, {
+        "id" : "5",
+        "x" : 930,
+        "y" : 1085
+      }, {
+        "id" : "30",
+        "x" : 225,
+        "y" : 654
+      }, {
+        "id" : "34",
+        "x" : 225,
+        "y" : 1099
+      }, {
+        "id" : "47",
+        "x" : 220,
+        "y" : 219
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "33",
+        "vertices" : [ {
+          "x" : 945,
+          "y" : 819
+        } ]
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "48",
+        "vertices" : [ {
+          "x" : 1160,
+          "y" : 359
+        } ]
+      }, {
+        "id" : "49"
+      }, {
+        "id" : "6"
+      } ],
+      "softwareSystemId" : "25"
+    }, {
+      "dimensions" : {
+        "height" : 2304,
+        "width" : 2294
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 230,
+        "y" : 1660
+      }, {
+        "id" : "2",
+        "x" : 960,
+        "y" : 200
+      }, {
+        "id" : "3",
+        "x" : 200,
+        "y" : 1170
+      }, {
+        "id" : "5",
+        "x" : 1644,
+        "y" : 708
+      }, {
+        "id" : "12",
+        "x" : 919,
+        "y" : 1713
+      }, {
+        "id" : "14",
+        "x" : 924,
+        "y" : 1193
+      }, {
+        "id" : "25",
+        "x" : 930,
+        "y" : 730
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-002",
+      "order" : 5,
+      "relationships" : [ {
+        "id" : "13"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "16"
+      }, {
+        "id" : "17",
+        "vertices" : [ {
+          "x" : 1869,
+          "y" : 1333
+        } ]
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "4"
+      }, {
+        "id" : "6",
+        "vertices" : [ {
+          "x" : 1869,
+          "y" : 393
+        } ]
+      } ],
+      "softwareSystemId" : "7"
+    } ],
+    "systemContextViews" : [ {
+      "dimensions" : {
+        "height" : 1423,
+        "width" : 2720
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 200,
+        "y" : 295
+      }, {
+        "id" : "2",
+        "x" : 2120,
+        "y" : 310
+      }, {
+        "id" : "3",
+        "x" : 820,
+        "y" : 922
+      }, {
+        "id" : "5",
+        "x" : 1375,
+        "y" : 395
+      }, {
+        "id" : "7",
+        "x" : 820,
+        "y" : 407
+      }, {
+        "id" : "25",
+        "x" : 1385,
+        "y" : 920
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "10"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "26",
+        "vertices" : [ {
+          "x" : 2330,
+          "y" : 1067
+        } ]
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "4",
+        "vertices" : [ {
+          "x" : 400,
+          "y" : 1062
+        } ]
+      }, {
+        "id" : "6",
+        "vertices" : [ {
+          "x" : 2095,
+          "y" : 545
+        } ]
+      }, {
+        "id" : "8",
+        "vertices" : [ {
+          "x" : 630,
+          "y" : 555
+        } ]
+      }, {
+        "id" : "9",
+        "vertices" : [ {
+          "x" : 2315,
+          "y" : 245
+        }, {
+          "x" : 1045,
+          "y" : 252
+        } ]
+      } ],
+      "softwareSystemId" : "7"
+    } ]
+  }
+}
