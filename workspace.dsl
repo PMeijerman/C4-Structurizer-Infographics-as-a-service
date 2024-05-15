@@ -76,7 +76,7 @@ workspace {
                 this -> database "slaat templates op"
                 
                 templateHttpTrigger = component "Http trigger" {
-
+                    ExperienceBuilder -> this "Synch templates"
                 }
 
                 templateTimerTrigger = component "Timer trigger" {
@@ -168,6 +168,17 @@ workspace {
             ArcGIS -> AzureApplicatie "Maakt infographic"
             AzureApplicatie -> GraphApi "Maakt email"
             GraphApi -> Gebruiker "Stuurt email"
+        }
+
+        dynamic TemplateSysteem {
+            title "Template systeem flowchart"
+            Medewerker -> ArcGIS "Maakt template"
+            Medewerker -> ExperienceBuilder "Klikt refresh"
+            ExperienceBuilder -> DatabaseSyncher "Stuurt aan"
+            ArcGIS -> DatabaseSyncher "Haalt templates op"
+            DatabaseSyncher -> database "Slaat templates op"
+            Medewerker -> ExperienceBuilder "Selecteerd actieve template"
+            ExperienceBuilder -> database "Slaat actieve template op" 
         }
 
         #endregion
