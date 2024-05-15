@@ -22,7 +22,6 @@ workspace {
 
         ArcGIS_Demo = softwareSystem "ArcGIS Demo" {
             Gebruiker -> this "Vult formulier in"
-            Medewerker -> this "Selecteerd infographic template"
             ArcGIS -> this "Maakt infographic"
             this -> GraphApi "Maakt email"
 
@@ -54,7 +53,7 @@ workspace {
 
         }
 
-        TemplateSystem = softwareSystem "TemplateSysteem" {
+        TemplateSysteem = softwareSystem "TemplateSysteem" {
             description "Systeem voor het gebruik van infographic templates"
             medewerker -> this "Selecteerd actieve template"
             this -> AzureQueueTrigger "ophalen actieve infographic"
@@ -63,7 +62,12 @@ workspace {
                 description "slaat de infographic templates op"
                 tags "database" "OutOfScope"
                 this -> AzureApplicatie "ophalen actieve infographic"
+            }
+
+            ExperienceBuilder = container "template selector" {
                 medewerker -> this "Selecteren actieve infographic"
+                this -> database "opslaan actieve infographic"
+                tags "OutOfScope"
             }
 
             DatabaseSyncher = container "Template database syncher" {
@@ -95,11 +99,6 @@ workspace {
 
             }
 
-            ExperienceBuilder = container "template selector" {
-                medewerker -> this "Selecteren actieve infographic"
-                this -> database "opslaan actieve infographic"
-                tags "OutOfScope"
-            }
         }
 
 
@@ -117,30 +116,40 @@ workspace {
         }
 
         systemContext ArcGIS_Demo {
+            title "Niveau 1"
             include element.type==softwareSystem
             include element.type==person
-            default
         }
 
-        container TemplateSystem {
+        container TemplateSysteem {
+            title "Template systeem niveau 2"
             include ArcGIS
             include Medewerker
-            include TemplateSystem
+            include TemplateSysteem
             include database
             include DatabaseSyncher
             include ExperienceBuilder
         }
 
+        container ArcGIS_Demo {
+            title "ArcGIS Demo niveau 2"
+            include element.type==softwareSystem
+            include element.type==person
+            include element.type==container
+        }
+
         component AzureApplicatie {
+            title "Azure applicatie niveau 3"
             include Survey123
             include ArcGIS
-            include TemplateSystem
+            include TemplateSysteem
             include AzureHttpTrigger
             include AzureQueueTrigger
             include AzureQueue
         }
 
         component DatabaseSyncher {
+            title "Database syncher niveau 3"
             include database
             include ArcGIS
             include templateHttpTrigger
@@ -149,12 +158,19 @@ workspace {
             include TemplateQueue
         }
 
-        container ArcGIS_Demo {
-            include element.type==softwareSystem
-            include element.type==person
-            include element.type==container
+        #region Flowcharts
+
+        dynamic ArcGIS_Demo {
+            title "ArcGIS Demo flowchart"
+            Gebruiker -> Survey123
+            Survey123 -> AzureApplicatie "stuurt aan"
+            TemplateSysteem -> AzureApplicatie "Stuurt infographic template"
+            ArcGIS -> AzureApplicatie "Maakt infographic"
+            AzureApplicatie -> GraphApi "Maakt email"
+            GraphApi -> Gebruiker "Stuurt email"
         }
 
+        #endregion
         
         theme default
     }
