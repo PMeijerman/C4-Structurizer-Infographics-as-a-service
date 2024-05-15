@@ -21,9 +21,9 @@ workspace {
         }
 
         ArcGIS_Demo = softwareSystem "ArcGIS Demo" {
-            Gebruiker -> this
+            Gebruiker -> this "Vult formulier in"
             Medewerker -> this "Selecteerd infographic template"
-            ArcGIS -> this
+            ArcGIS -> this "Maakt infographic"
             this -> GraphApi "Maakt email"
 
             Survey123 = container "Survey123" {
@@ -95,7 +95,7 @@ workspace {
 
             }
 
-            ExperienceBuilder = container "Infographic selector" {
+            ExperienceBuilder = container "template selector" {
                 medewerker -> this "Selecteren actieve infographic"
                 this -> database "opslaan actieve infographic"
                 tags "OutOfScope"
